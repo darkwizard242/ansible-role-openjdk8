@@ -1,0 +1,5 @@
+---
+# defaults file for openjdk8
+openjdk8_app_debian: openjdk-8-jdk
+openjdk8_app_el: java-1.8.0-openjdk-devel
+openjdk8_desired_state: present

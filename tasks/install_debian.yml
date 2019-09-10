@@ -1,0 +1,9 @@
+---
+# tasks file for openjdk8 - Ubuntu
+
+- name: Installing {{ openjdk8_app_debian }} on Debian based systems.
+  apt:
+    name: "{{ openjdk8_app_debian }}"
+    state: "{{ openjdk8_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes

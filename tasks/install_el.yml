@@ -1,0 +1,8 @@
+---
+# tasks file for openjdk8 - EL
+
+- name: Installing {{ openjdk8_app_el }} on EL based systems.
+  yum:
+    name: "{{ openjdk8_app_el }}"
+    state: "{{ openjdk8_desired_state }}"
+    update_cache: yes
