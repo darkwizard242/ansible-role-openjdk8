@@ -2,7 +2,7 @@
 
 # Ansible Role: openjdk8
 
-Role to install (_by default_) `openjdk-8-jdk` package for Debian based systems and `java-1.8.0-openjdk-devel` for EL systems or uninstall (_if passed as var_) on **Debian** based and **EL** based systems.
+Role to install (_by default_) [openjdk-8-jdk](https://openjdk.java.net/) package for Debian based systems and `java-1.8.0-openjdk-devel` for EL systems or uninstall (_if passed as var_) on **Debian** based and **EL** based systems.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ For default behaviour of role (i.e. installation of **openjdk8** package) in ans
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openjdk8
+    - darkwizard242.openjdk8
 ```
 
 For customizing behavior of role (i.e. installation of latest **openjdk8** package) in ansible playbooks.
@@ -47,9 +47,9 @@ For customizing behavior of role (i.e. installation of latest **openjdk8** packa
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openjdk8
-      vars:
-        openjdk8_desired_state: latest
+    - darkwizard242.openjdk8
+  vars:
+    openjdk8_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **openjdk8** package) in ansible playbooks.
@@ -57,9 +57,9 @@ For customizing behavior of role (i.e. un-installation of **openjdk8** package) 
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.openjdk8
-      vars:
-        openjdk8_desired_state: absent
+    - darkwizard242.openjdk8
+  vars:
+    openjdk8_desired_state: absent
 ```
 
 ## License
