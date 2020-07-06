@@ -1,7 +1,7 @@
 ---
-# tasks file for openjdk8 - EL
+# tasks file for openjdk8 - EL Family
 
-- name: Installing {{ openjdk8_app_el }} on EL based systems.
+- name: EL Family | Installing {{ openjdk8_app_el }}
   yum:
     name: "{{ openjdk8_app_el }}"
     state: "{{ openjdk8_desired_state }}"

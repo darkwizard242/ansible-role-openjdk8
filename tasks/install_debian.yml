@@ -1,7 +1,7 @@
 ---
-# tasks file for openjdk8 - Ubuntu
+# tasks file for openjdk8 - Debian/Ubuntu Family
 
-- name: Installing {{ openjdk8_app_debian }} on Debian based systems.
+- name: Debian/Ubuntu Family | Installing {{ openjdk8_app_debian }}
   apt:
     name: "{{ openjdk8_app_debian }}"
     state: "{{ openjdk8_desired_state }}"
