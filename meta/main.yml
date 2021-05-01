@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: openjdk8
-  author: Ali Muhammad
+  author: darkwizard242
   description: Install/uninstall OpenJDKs Java 8 package on Debian and EL based systems.
   company: none
   license: MIT
