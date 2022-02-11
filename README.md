@@ -22,11 +22,11 @@ openjdk8_desired_state: present
 
 ### Variables table:
 
-Variable               | Value (default)          | Description
----------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------
-openjdk8_app_debian    | openjdk-8-jdk            | Defines the app to install on Debian based systems i.e. **openjdk-8-jdk**
-openjdk8_app_el        | java-1.8.0-openjdk-devel | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **java-1.8.0-openjdk-devel**
-openjdk8_desired_state | present                  | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
+Variable               | Description
+---------------------- | --------------------------------------------------------------------------------------------------------
+openjdk8_app_debian    | Defines the app to install on Debian based systems i.e. **openjdk-8-jdk**
+openjdk8_app_el        | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **java-1.8.0-openjdk-devel**
+openjdk8_desired_state |                                                                                                          | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
 
 ## Dependencies
 
@@ -68,4 +68,4 @@ For customizing behavior of role (i.e. un-installation of **openjdk8** package) 
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/).
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/).
